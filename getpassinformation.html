@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<title> GET PASS INFORMATION </title>
+<head>
+<style>
+fieldset {
+	background-color: #eeeeee;
+	font-size: 18px;
+	font-family: Trebuchet MS;
+	}
+	
+legend {
+	background-color: #1d2d36;
+	color:white;
+	padding:10px 12px;
+	font-size:25px;
+	font-family: Trebuchet MS;
+}
+
+input {
+	margin-left: 150px;
+	font-size: 18px;
+	font-family: Trebuchet MS;
+}
+
+input[type=text], select {
+	width:80%;
+	padding:10px 15px;
+	display:inline-block;
+	border:2px solid #ccc;
+	border-radius:4px;
+	box-sizing:border-box;
+}
+
+input[type=date], select {
+	padding:10px 15px;
+	display:inline-block;
+	border:2px solid #ccc;
+	border-radius:4px;
+	box-sizing:border-box;
+}
+
+input[type=email], select {
+	width:80%;
+	padding:10px 15px;
+	display:inline-block;
+	border:2px solid #ccc;
+	border-radius:4px;
+	box-sizing:border-box;
+}
+
+input[type=tel], select {
+	width:80%;
+	padding:10px 15px;
+	display:inline-block;
+	border:2px solid #ccc;
+	border-radius:4px;
+	box-sizing:border-box;
+}
+
+input[type=submit] {
+	width:80%;
+	background-color: skyblue;
+	color: black;
+	padding: 14px 20px;
+	cursor: pointer;
+}
+input[type=submit]: hover {
+	background-color:#f2f2f2;
+}
+
+label {
+	width: 100px;
+	margin-left: 50px;
+	font-size: 18px;
+	font-family: Trebuchet MS;
+}
+
+p {
+	color: black;
+	margin-left: 50px;
+	font-size: 18px;
+	font-family: Trebuchet MS;
+}
+</style>
+</head>
+
+<body>
+<h1 style="font-family:verdana; border:blue; border-width:5px; border-style:outset;"> <center> GET PASS INFORMATION </h1>
+
+<form action="action_page.html" method="get">
+	<fieldset>
+		<legend> Personal Information </legend>
+			<label for="fname">First Name:</label><br>
+			<input type="text" id="fname" name="fname" placeholder="First Name" required><br><br>
+			<label for="midname">Middle Name:</label><br>
+			<input type="text" id="midname" name="midname" placeholder="Middle Name" required><br><br>
+			<label for="lname">Last Name:</label><br>
+			<input type="text" id="lname" name="lname" placeholder="Last Name" required><br><br>
+			<label for="uname">Preferred username:</label><br>
+			<input type="text" id="uname" name="uname" placeholder="User name" required><br><br>
+			
+			<label for="address">Address:</label><br>
+			<input type="text" id="address" name="address" placeholder="Unit, St., Subd., etc." required><br><br>
+			<label for="region">Region:</label><br>
+			<input type="text" id="region" name="region" placeholder="Region" required><br><br>
+			<label for="province">Province:</label><br>
+			<input type="text" id="province" name="province" placeholder="Province" required><br><br>
+			<label for="city">City:</label><br>
+			<input type="text" id="city" name="city" placeholder="City" required><br><br>
+			<label for="brgy">Barangay:</label><br>
+			<input type="text" id="brgy" name="brgy" placeholder="Barangay" required><br><br>
+			<label for="pcode">Postal Code:</label><br>
+			<input type="text" id="pcode" name="pcode" placeholder="Postal Code" required><br><br>
+			
+			<label for="contact">Contact Number:</label><br>
+			<input type="tel" id="contact" name="contact" placeholder="Contact Number" required><br><br>
+			<label for="email">Email:</label><br>
+			<input type="email" id="email" name="email" placeholder="Email Address" required><br><br>
+			
+			<p>Gender:</p>
+			<input type="radio" id="male" name="gender" value="M" checked>
+			<label for="male">Male</label><br>
+			<input type="radio" id="female" name="gender" value="F">
+			<label for="female">Female</label><br><br>
+			
+			<label for="bday">Date of Birth:</label><br>
+			<input type="date" id="bday" name="name"><br><br>
+			<label for="bplace">Place of Birth:</label><br>
+			<input type="text" id="bplace" name="bplace" placeholder="City"><br><br>
+			<label for="nationality">Nationality:</label><br>
+			<input type="text" id="nationality" name="nationality"><br><br>
+			
+			<p>Civil Status:</p>
+			<input type="radio" id="single" name="status" value="S" checked>
+			<label for="single">Single</label><br>
+			<input type="radio" id="married" name="status" value="M">
+			<label for="married">Married</label><br>
+			<input type="radio" id="divorced" name="status" value="D">
+			<label for="divorced">Divorced</label><br>
+			<input type="radio" id="widowed" name="status" value="W">
+			<label for="widowed">Widowed</label><br>
+			<br>
+			
+			<label for="maiden">Mother's maiden name:</label><br>
+			<input type="text" id="maiden" name="maiden"><br><br>
+			
+			<p>Employment status:</p>
+			<input type="radio" id="employed" name="emstatus" value="1" checked>
+			<label for="employed">Employed</label><br>
+			<input type="radio" id="consultant" name="emstatus" value="2">
+			<label for="consultant">Consultant</label><br>
+			<input type="radio" id="selfemployedB" name="emstatus" value="3">
+			<label for="selfemployedB">Self employed with own business</label><br>
+			<input type="radio" id="seflemployedF" name="emstatus" value="4">
+			<label for="seflemployedF">Self employed as online freelance</label><br>
+			<br>
+			
+			<label for="employer">Employer/Company:</label><br>
+			<input type="text" id="employer" name="employer" placeholder="Company Name"><br><br>
+			
+			<p>Source of funds:</p>
+			<input type="radio" id="allowance" name="fund" value="1" checked>
+			<label for="allowance">Allowance</label><br>
+			<input type="radio" id="profit" name="fund" value="2">
+			<label for="profit">Business profit</label><br>
+			<input type="radio" id="commissions" name="fund" value="3">
+			<label for="commissions">Commissions</label><br>
+			<input type="radio" id="inheritance" name="fund" value="4">
+			<label for="inheritance">Inheritance</label><br>
+			<input type="radio" id="loan" name="fund" value="5">
+			<label for="loan">Loan</label><br>
+			<br><br><br>
+	</fieldset>
+	<br>
+	
+	<fieldset>
+		<legend> Health Declaration </legend>
+		<p>1. Are you experiencing (nakakaranas ka ba ng): </p>
+			<p style="margin-left:100px">a. Sore throat (pananakit ng lalamunan)</p>
+				<input type="radio" id="yes" name="questA" value="Y">
+				<label for="yes">Yes</label><br>
+				<input type="radio" id="no" name="questA" value="N" checked>
+				<label for="no">No</label>
+			<p style="margin-left:100px">b. Body pains (pananakit ng katawan)</p>
+				<input type="radio" id="yes" name="questB" value="Y">
+				<label for="yes">Yes</label><br>
+				<input type="radio" id="no" name="questB" value="N" checked>
+				<label for="no">No</label>
+			<p style="margin-left:100px">c. Headache (sakit ng ulo)</p>
+				<input type="radio" id="yes" name="questC" value="Y">
+				<label for="yes">Yes</label><br>
+				<input type="radio" id="no" name="questC" value="N" checked>
+				<label for="no">No</label>
+			<p style="margin-left:100px">d. Fever the past few days (lagnat sa nakalipas na araw)</p>
+				<input type="radio" id="yes" name="questD" value="Y">
+				<label for="yes">Yes</label><br>
+				<input type="radio" id="no" name="questD" value="N" checked>
+				<label for="no">No</label>
+			<p style="margin-left:100px">e. Cough or colds (ubo o sipon)</p>
+				<input type="radio" id="yes" name="questE" value="Y">
+				<label for="yes">Yes</label><br>
+				<input type="radio" id="no" name="questE" value="N" checked>
+				<label for="no">No</label>
+			<p style="margin-left:100px">f. Shortness of breathe (hinahabol ang paghinga)</p>
+				<input type="radio" id="yes" name="questF" value="Y">
+				<label for="yes">Yes</label><br>
+				<input type="radio" id="no" name="questF" value="N" checked>
+				<label for="no">No</label><br>
+			<p style="margin-left:100px">g. Diarrhea (pagtatae)</p>
+				<input type="radio" id="yes" name="questG" value="Y">
+				<label for="yes">Yes</label><br>
+				<input type="radio" id="no" name="questG" value="N" checked>
+				<label for="no">No</label><br>
+			<br>
+		<p>2. Have you worked together or stayed in the same close environment of a confirmed COVID-19 case? (May nakasama ka ba o nakatrabahong tao na kumpirmadong may COVID-19 o coronavirus?)</p>
+			<input type="radio" id="yes" name="quest2" value="Y">
+			<label for="yes">Yes</label><br>
+			<input type="radio" id="no" name="quest2" value="N" checked>
+			<label for="no">No</label>
+		<p>3. Have you had any contact with anyone with fever, cough, colds, and sore throat the past 2 weeks? (Mayroon ka bang nakasama na may lagnat, ubo, sipon o sakit ng lalamunan sa nakalipas na 2 linggo?)</p>
+			<input type="radio" id="yes" name="quest3" value="Y">
+			<label for="yes">Yes</label><br>
+			<input type="radio" id="no" name="quest3" value="N" checked>
+			<label for="no">No</label>
+		<p>4. Have you travelled outside the Philippines in the last 14 days? (Ikaw ba ay nakabiyahe sa labas ng Pilipinas sa nakalipas na 14 na araw?)</p>
+			<input type="radio" id="yes" name="quest4" value="Y">
+			<label for="yes">Yes</label><br>
+			<input type="radio" id="no" name="quest4" value="N" checked>
+			<label for="no">No</label>
+		<p>5. Have you travelled to any areas in NCR aside from your home? (Ikaw ba ay nagpunta sa ibang parte ng NCR o Metro Manila bukod sa iyong bahay?)Specify where if your answer is yes. (Sabihin kung saan kung ang sagot mo ay oo.)</p>
+			<input type="radio" id="yes" name="quest5" value="Y">
+			<label for="yes">Yes</label><br>
+			<input type="radio" id="no" name="quest5" value="N" checked>
+			<label for="no">No</label><br>
+			<label for="place">Where (saan):</label><br>
+			<input type="text" id="place" name="place"><br>
+		<p>6. I am a PWD. </p>
+			<input type="radio" id="yes" name="quest6" value="Y">
+			<label for="yes">Yes</label><br>
+			<input type="radio" id="no" name="quest6" value="N" checked>
+			<label for="no">No</label>
+		<p>7. I am pregnant. </p>
+			<input type="radio" id="yes" name="quest7" value="Y">
+			<label for="yes">Yes</label><br>
+			<input type="radio" id="no" name="quest7" value="N" checked>
+			<label for="no">No</label>
+			<br>
+		<p> I hereby authorize KDR Adventure camp to collect and process the data indicated in the survey for the purpose of effecting control of COVID-19 infection. I understand that my personal information is protected by RA 10173, Data Privacy Act of 2012, that I am required by RA 11469, Bayanihan to Heal as One Act, to provide truthful information and that this health declaration is in accordance with the memoranda issued by various government institutions, including the Joint Memorandum Circular No. 20-04-A Series 2020 by the Department of Trade and Industry and the Department of Labor and Employment, Memorandum Circular No. 2020-077 by the Department of Interior and Local Government.</p>
+			<input type="checkbox" name="agree" value="AGREE">Check the box to authorized
+			<br>
+			<br>
+			<input type="submit" value="SUBMIT" style="font-size:30px;">
+	</fieldset>
+	</form
+</body>
+
+</html>
