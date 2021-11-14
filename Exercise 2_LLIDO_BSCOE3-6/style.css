@@ -1,0 +1,58 @@
+body{
+	background-color:#FFFFCC;
+	color:#330000;
+	font-family:Verdana;	
+}
+#container{
+	margin-top:20px;
+	margin-left:20%;
+	margin-right:20%;
+	height:510px;
+	width:750px;
+	border-style:solid;
+	padding:0px;
+}
+#logo{
+	background-color: #CCAA66;
+	text-align: center;
+	border-bottom-style:solid;
+	border-top-style:solid;
+	height:80px;
+	margin:0px;
+}
+#leftcolumn{
+	background-color: #E8D882;
+	position:relative;
+	padding-left:20px;
+	left:0px;
+	width:130px;
+	height:320px;
+	float:left;
+	white-space:pre-line;
+}
+#rightcolumn{
+	background-color: #F1E8B0;
+	position:relative;
+	width:580px;
+	height:300px;
+	padding:10px;
+	float:right;
+}
+#navBar{
+	text-align: left;
+}
+#CatCoffee{
+		position:absolute;
+		right:20px;
+		bottom:10px;
+}
+#footer{
+	background-color:#CCAA66;
+	border-top-style:solid;
+	height:80px;
+	text-align: center;
+	font-style: italic;
+	width:750px;
+	margin-top:320px;
+	padding-top:20px;
+}
